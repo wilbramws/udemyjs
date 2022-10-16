@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Sebagai Value</title>
+</head>
+<body>
+    <script>
+        //function di variable
+        function sayHello(name){
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        sayHello("Eko");
+
+        const say = sayHello;
+        say("Budi");
+
+        //function di parameter
+
+        function giveMeName(callback){
+           callback("Function paramete"); 
+        }
+
+        giveMeName(sayHello);//function sayhello dari atas.... 
+        giveMeName(say);
+
+
+//tidak perlu buka kurung tutup karna  hanya mengirim functionny
+
+    </script>
+</body>
+</html>

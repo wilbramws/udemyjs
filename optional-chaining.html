@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+
+/*      const person = {};
+
+
+        const country = person.addres.country; //ini terjadi erororr
+
+        document.writeln(`<p>${country}</p>`) 
+
+
+*/
+//maka GUNAKAN TANDA TYK ??
+        const person = {
+            addres :{
+                country : "kita garuda"
+                     }
+        };
+
+        let country = person?.addres?.country;
+        document.writeln(`<p>${country}</p>`)
+        
+
+    </script>
+</body>
+</html>

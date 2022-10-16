@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <script>
+
+//        function sayHello(name){
+//            alert (`Hello ${name}`)
+//        }
+        
+//        const person = {
+ //           name : "Eko",
+ //           sayHello : sayHello
+//
+ //           }
+       
+
+  //      person.sayHello(`Budi`)
+
+            const person = {
+                name : "Eko",
+                sayHello : function(name){
+                    console.info(`Helooo ${name}`)
+                }
+            }
+            person.sayHello(`Budi`)
+
+//cara 2 (kalo da terlanjur objectny dibuat)
+            const person2 = {
+                name2 : "Ekoo"
+            }
+            person2.sayHello2 = function(name2){
+                console.info(`Helllo 2 ${name2}`);
+            }
+
+            person2.sayHello2(`Budi`)
+
+
+    </script>
+    <!-- O M : Memasukkan function ke dlm property di object -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <Title>Undefined</Title>
+
+
+    </head>
+    <body>
+        <script>
+
+            let name;  //agar data terdefenisi seharus nya let name = " hashhashd" maka yg keluar defined
+
+            if (name === undefined){
+                alert("UNDEFINED");  // karna blm didefenisiskan datany maka keluar Undifined
+            }
+            else{
+                alert( "DEFINED")};
+
+
+            
+            const names = ["EKo ", "Array",1]; //terdapat 3 index di arrayny jadi difined
+            if (names [2] === undefined){
+                console.info("ARAy UNDIFINED");
+            }else{
+                console.info("Array DIFINED");
+            }
+            
+            const person = {
+                name : "Object"   // karna ada tipe nya jadi difined
+            };
+            if(person.name === undefined){
+                console.info("Objec UNDIFINED");
+            }else{
+                console.info("Object DIFINED");
+            }
+
+
+
+        </script>
+    </body>
+</html>

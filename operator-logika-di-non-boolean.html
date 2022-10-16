@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Operator Logika Di Non Boolean </title>
+    </head>
+    <body>
+        <script>
+            // yg trutht ditampilkan di console jika sma " tru maka yg kiri"
+           console.info("Hello" || "");  
+            console.info("" || []);
+            console.info("0" || "NOL");
+            console.info( 0 || "NOL");
+            console.info( null || "NULL");
+            console.info(undefined || "UNDEFINED");
+
+            //kegunaannya contoh :
+            const orang = {
+                firstname : "",
+                lastname : "budfh"
+            };
+
+            const name = orang.firstname || orang.lastname;
+            alert(name);
+            
+            
+
+            // yg falsy ditampilkan di console kalo &&.....kebalikan yg atas
+            console.info("Hello" && "");  
+            console.info("" && []);
+            console.info("0" && "NOL");
+            console.info( 0 && "NOL");
+            console.info( null && "NULL");
+            console.info(undefined && "UNDEFINED");
+
+            const orang2 = {
+                firstname2 : "Budi",        //??
+                lastname2 : "Budiii"
+            };
+
+            const name2 = orang.firstname2 && orang.lastname2;
+            alert(name2);
+
+
+        </script>
+    </body>
+
+</html>

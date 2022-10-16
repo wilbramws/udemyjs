@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <script>
+        function register(name, gender = "UNKNOOWN"){           //unknow itu ketika mengirim data gender kosong/undefined maka yg muncuk string unknown
+        console.info(name);
+        console.info(gender);
+        }
+
+        register("Eko","Male");
+        register("Budi");
+        register();
+        register("joko",undefined); //tdk ada valueny
+        register("joko",null);      //ini ada karna dinilai sudah ada valuenya namun kosong
+
+    </script>
+</body>
+</html>

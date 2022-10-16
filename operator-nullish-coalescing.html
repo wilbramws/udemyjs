@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title> Operator Nullish Coalescing</title>
+</head>
+<body>
+    <script>
+
+        let parameter = null;
+
+        let data = parameter;
+        if (data === undefined || data === null ){
+            data = "nilai default";
+        } 
+        document.writeln(`<p>${data}</p>`);
+
+        //agar lebih sederhana maka mnjdS
+
+         data = parameter ?? "nilai default";
+        document.writeln(`<p>${data}</p>`);
+
+    </script>
+</body>
+
+</html>

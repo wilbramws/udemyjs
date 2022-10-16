@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement </title>
+</head>
+<body>
+    <script>
+        //kode tanpa with statement:
+        const person = {
+            firstname : "Eko",
+            middlename: "Kurniawan",
+            lastname: "khanedy"
+        }
+        console.log(person.firstname);
+        console.log(person.middlename);
+        document.writeln(person.lastname);
+
+        //cth yg bikin ambigu
+        const firstname = "Budi";
+        const lastname = "nugraha";        
+
+        alert(`${lastname}`); //harus begini gk boleh pakek with karna ambigu
+
+        //dengan menggunakan with statement:
+        with(person){
+            document.writeln(`<p>${firstname}</p>`)
+            document.writeln(middlename)
+        }
+
+
+
+    </script>
+</body>
+
+<!-- with statement tidak direkomendasikan karena membuat sebuah kode menjadi ambigu -->
+</html>

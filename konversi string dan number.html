@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Konversi string dan number </title>
+    </head>
+    <body>
+        <script>
+       
+        
+
+
+            const value1 = parseInt("1"); //string ke bulat
+            const value2 = 1 ; //string
+            const sum = value1 + value2;
+
+            document.writeln(`<p>${sum}</p>`)                
+            
+            //hasil 11 karena string ditambah string menghasilkan string lagi bukan opersi mtk
+
+            document.writeln(`<p>${parseInt("1.1")}</p>`)   
+            document.writeln(`<p>${parseFloat("1.1")}</p>`) 
+            document.writeln(`<p>${Number("1.1")}</p>`) 
+
+
+            const a = 1
+            const b = 2
+            const total = a.toString() + b.toString(); // menjadi string 1 + STRING 1 =11
+
+            document.writeln(`<p>${total}</p>`)   
+
+            // NAN
+
+            document.writeln(`<p>${parseInt("salah")}</p>`)  
+            document.writeln(`<p>${parseFloat("1.1eko")}</p>`) //kesalahan di blkg masih ditolerir
+            document.writeln(`<p>${parseFloat("eko1.1eko")}</p>`) //tdk bisa ditolerir
+            document.writeln(`<p>${Number("1.1eko")}</p>`) //tdk bisa ditolerir dalam number 1 katapun
+            document.writeln(`<p>${Number("eko1.1eko")}</p>`) 
+
+            const first = Number("salah"); //NaN
+            const totalnumber = first + 100;
+            document.writeln(`<p>${totalnumber}</p>`); // apapun kalo sudah NaN  akan = NaN 
+            //isNaN()
+            document.writeln(`<p>${isNaN(first)}</p>`); 
+            document.writeln(`<p>${isNaN(100)}</p>`); 
+            document.writeln(`<p>${isNaN(totalnumber)}</p>`); 
+            document.writeln(`<p>${isNaN(NaN)}</p>`); 
+
+        </script>
+
+        
+    </body>
+    
+
+</html>

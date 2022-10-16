@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <script>
+        //membuat function dengan parameter dan return value
+        function sayHello(firstName, middleName) {
+            const say = `Hello ${firstName} ${middleName}`;
+            return say;     //mengembalikan value atau data bebas buat apa menit 4:45
+        }
+
+        // memanggil function dengan parameter dan return value
+        const result = sayHello("Eko","Khannedy");
+        document.writeln(`<p>${result}</p>`)
+
+
+        //function return value lebih dari satu
+        function getFinalScore(value){
+            if (value>90){
+                return "A";
+            }else if (value > 80){
+                return "B";
+            }else if (value > 70){
+                return "C";
+            }else if (value > 60){
+                return "D";
+            }else {
+                return "E";
+            }
+        }
+        const finalValue = getFinalScore(90);
+        document.writeln(`<p>Nilai Anda ${finalValue}</p>`);
+
+        //menghentikan eksekusi dengan return
+        function isContains(array, searchValue) {   //punya sebuah function namany iscontains menit 09:55
+            for (const element of array){       //perulangan for of //mengiterasi tiap elmen dari array dan disimpan di variable element
+                console.info(`iterasi Element ${element}`);
+                if (element=== searchValue){ //lalu check menit 10 : 20 
+                    return true;
+                }
+            }
+            return false;
+        }
+        const array = [1,2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const search = 6; //jika sudah ketemu mka iterasi selanjutnya tidak dilakukan
+        const found = isContains(array, search);
+        document.writeln (`<p>${found}</p>`)
+    </script>
+
+
+
+
+    
+</body>
+</html>

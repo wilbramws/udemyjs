@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Parameter</title>
+</head>
+<body>
+    <script>
+        function sayHello(firstName, middleName,lastName){
+        document.writeln(`<p>${firstName}</p>`);
+        document.writeln(`<p>${middleName}</p>`);
+        document.writeln(`<p>${lastName}</p>`);
+        }
+
+        sayHello();
+        sayHello(1);
+        sayHello("eko","kurniawan");
+        sayHello("eko","khanedy","kurniawan");
+        sayHello("eko","khanedy","kurniawan","budi");//ini menguntunngkan tapi bahaya
+        sayHello("Eko",1,"khannedy")
+//tanpa parameter dia akan menghasilkan undefined
+    </script>
+</body>
+</html>

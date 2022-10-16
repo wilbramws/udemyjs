@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title> Switch Statment</title>
+
+    </head>
+
+    <body>
+        <script>
+
+            const nilai = "B";
+
+           switch (nilai) {
+                case "A":
+                    document.writeln("<p> Anda Lulus Sangat Amat Baik</p>");
+                    break;
+                case "B"  :
+                case "C":
+                    document.writeln("<p>Lulus ajaaaaa</p>");
+                    break;
+                case "D":
+                    document.writeln("<p>Goblok Remedyyy</p>");
+                    break;
+            
+                default:            //ini hampir sama kyk else di dalam if
+                    document.writeln("<p>OTW DO</p>")
+                    break;
+            }
+
+            if (nilai === "A"){
+                document.writeln("<p> Anda Lulus Sangat Amat baik versi if</p>");
+            }else if(nilai === "B" || nilai === "C" ){
+                document.writeln("<p> Lulusss Ajaa versi if</p>");
+            }else if(nilai === "D"){
+                document.writeln("<p>Goblok Remedy Versi If</p>");
+            }else{
+                 document.writeln("<p>Otw D.O versi If</p>");
+            }
+
+
+
+
+        </script>
+    </body>
+
+</html>

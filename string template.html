@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>String Template </title>
+    </head>
+    <body>
+        <script>
+       
+        
+            const Name = " Budi Santoso Kurniawan";
+            const firstName = "Budi";
+            const middleName ="Santoso";
+            const lastName = "Kurniawan";
+            const Template = `Name: ${firstName} ${middleName} ${lastName}`; //ini lebih enak
+            
+          
+            const Lama = "Name : " + firstName + "" + middleName + " "  + lastName; //ini ribet 
+
+            console.info(Template)
+
+
+            const Nilai = 60; 
+            const Template2 = `Name : ${Name}, Lulus : ${Nilai > 70}`;
+
+            console.info(Template2)
+
+
+            const multiline = `Nama Saya Budi
+            sekarang sok an belajar
+seolah gk jelas
+            pakai mahalan
+            aha oho`                //backtik support multiline
+
+
+            document.writeln("<pre>")
+            document.writeln(multiline)
+            document.writeln("</pre>")
+
+
+        </script>
+
+        
+    </body>
+    
+</html>

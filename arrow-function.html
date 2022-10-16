@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        //versi panjang
+        const sayHello = (name) => {
+            const say = `Hello ${name}`
+            console.info(say);
+        }
+
+        sayHello("Eko");
+
+        // arrow function tanpq blok(kurung kurawal )
+
+        const sayHello2 =(name2) => console.info(`Haloo ${name2}`);
+
+        sayHello2("Aroow tanpa kurung kurawal")
+
+        //lebih sederhana lagi
+        const sayHello3 =name3 => console.info(`Haloo ${name3}`);       //kalo parameter lebih dari 1 harus pakek kurung parameter
+
+        sayHello3("Aroow tanpa kurung kurawal tanpa kurng parameter")
+
+
+
+
+
+        //arrow function mengembalikan data
+        //versi panjang jadi makek return
+        const sum = (first, second) => {
+            return first + second;
+        }
+
+        console.info(sum(100, 200));
+
+        //versi tanpa blok
+            const sum2 = (first1, second2) => first1 + second2; 
+        console.info(sum(100, 200));
+
+
+        //A F sbg parameter(anonym)
+        function giveMeName (callback){
+            callback("EKo")
+        }
+
+        giveMeName(function (name4) {
+            console.info(`Hello parameter Anonym ${name4}`)
+        })
+
+        
+        //A F sbg parammeter(Arrow)
+        function giveMeName2 (callback2){
+            callback2("EKo2")
+        }
+
+        giveMeName2(name5 => console.info(`helooooo parameter arrow ${name5}`))
+
+    </script>
+
+<!-- arrow function mirip seperti anonymous function tdk bisa berdiri sendiri.. harus buat didlm variable baru parameter -->
+</body>
+</html>

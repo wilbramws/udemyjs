@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tipe Data Object</title>
+
+    </head>
+
+    <body>
+        <script>
+            
+            const person ={};   //object kosonng hampir sama kyk array kosong
+
+            // menambah atau mengubah
+           person["nama"] = "Ekoooooo";
+            person["alamat"] = "Indo";
+            person["Umur"] = 18;
+            
+            console.table(person);
+
+            //menghapus
+            delete person["nama"];
+            console.table(person);      
+
+
+            //pakai ini biar gk ribet
+            const person2 = {
+                nama_kalospasi: "ekkekekooo",
+                "nama kalo spasi": "biar gkeror pakek petik 2 kalo spasi ",
+                alaamatt: "Mu",
+                Umur: 13
+            };
+
+            console.info(`Nama: ${person2.nama_kalospasi}`);
+            console.info(`Namaa: ${person2["nama kalo spasi"]}`); //sangat bigungyaaa wlwkwk
+            console.info(`Umur: ${person2.Umur}`);
+            console.info(`alamat: ${person2.alaamatt}`);
+            console.table(person2);
+            
+        </script>
+
+
+
+    </body>
+
+
+</html>

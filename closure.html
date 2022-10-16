@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        function createAdder(value){
+            const owner = "EKO";
+
+            function add(param){
+                console.info(owner)
+                return value + param
+            }
+            
+            return add ;
+        
+        }
+
+        const addTwo = createAdder(2);
+        // seakan akan menajadi spt ini :
+       //  function addTwo(param){
+         //   console.info("Ekooo");
+          //  return 2 + param;
+        //  }
+
+        console.info(addTwo(10));       // param ini 10
+        console.info(addTwo(20));
+
+
+        const addEight= createAdder(8);
+        // seakan akan menajadi spt ini :
+       //  function addTwo(param){
+         //   console.info("Ekooo");
+          //  return 8 + param;
+        //  }
+
+        console.info(addEight(10));       // param ini 10
+        console.info(addEight(20));       //paramnya 20
+
+    </script>
+</body>
+</html>

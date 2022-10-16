@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+
+//global scope
+    let counter = 0;
+    
+    //functionya ini global scope
+    function hitMe(){
+        //didalam kurung kurawal ini adalah local scope hitme
+        counter++   //conterny dinaikan sbyk 2x
+    }
+
+    //functionya ini global scope
+    function outer(){
+        //ini local scope outer
+
+    }
+
+        hitMe();
+        hitMe();
+        hitMe();
+
+
+        console.info(counter);
+
+//
+    function first (){
+        //local scope first
+        let firstVariable = "First";
+
+        
+    }
+
+    function second (){
+        //local scope second
+        let secondVariable = "Second";
+    }
+
+    first ();
+    second();
+    
+   //global scope
+    console.info(firstVariable); //eror karena firsvariable brada di local scope...shg tdk bisa diakses dari luar. walupun itu antar local scope juga tdk bisa diakses.. hanya boleh didlm local scope itu sendiri..
+    console.info(secondVariable);       //eror juga
+
+
+
+//nested function scope
+    function first(){
+        let firstNested = "First";
+
+        function secondNested(){
+            console.info(firstNested);
+            const secondNestedvariable= "Nested Eror iseng";
+        }
+        secondNested();
+        console.info(secondNestedvariable);     //eror
+    }
+
+    first()
+
+   
+
+
+    </script>
+</body>
+</html>

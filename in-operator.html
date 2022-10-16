@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <head>
+        <title> In Operator</title>
+    </head>
+    <body>
+        <script>
+
+            const person = {
+                firstname : "Ekoooo",
+                lastname : 222
+            }
+
+            if ("firstname" in person){
+                alert(`Hello ini adaa yaa ${person.firstname}`);
+            }else {
+                alert("kosongggg gk adaaa")
+            }
+
+
+            const student = {
+                firstname : "ekkkooo",
+                middlename : undefined,
+                lastnamee : "hahah"
+            }
+
+            if ("middlename" in student){
+                alert(`Heloo ada laagiii  tapi ${student.middlename}`)
+
+            }else{
+                alert("gak adaaa")
+            }
+
+            const names = [null, "kursnianan", null];
+            const result = 0 in names //hasilnya akan true karna null yaitu index ny di array
+            document.writeln(`<p>${result}</p>`)
+
+        </script>
+    </body>
+
+
+
+
+
+</html>
